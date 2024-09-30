@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'MunroSmall';
+    src: url('FONT/munrosmall.ttf'); /* Add MunroSmall font file if needed */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    color: red;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.navbar-logo span {
+    color: white;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Main content */
+.intro {
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'MunroSmall';
+}
+
+.main-logo {
+    font-family: 'MunroSmall';
+    font-size: 100px;
+    color: red;
+    margin-bottom: 200px;
+}
+
+.main-logo span {
+    color: white;
+}
+
+.main-menu {
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'MunroSmall', sans-serif;
+}
+
+.menu-item {
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-item span {
+    margin-left: 10px;
+}
+
+/* Hover effect */
+.menu-item:hover span {
+    color: red;
+}
+
+.submenu {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.submenu a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.submenu div {
+    margin-left: 30px;
+    text-align: left;
+}
+
+.menu-item.opened .submenu {
+    display: block;
+}
+
+/* Triangle Icons */
+.triangle-icon {
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-item.opened .triangle-icon {
+    transform: rotate(90deg);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: black;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
