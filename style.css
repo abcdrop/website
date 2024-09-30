@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MunroSmall';
-    src: url('FONT/munrosmall.ttf'); /* Add MunroSmall font file if needed */
+    src: url('munrosmall.ttf'); /* Add MunroSmall font file if needed */
 }
 
 body {
